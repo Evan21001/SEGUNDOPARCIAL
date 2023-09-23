@@ -11,5 +11,3 @@ def carga_suma():
     
 mostarar_mensaje("El programa calcula la suma de dos valores ingresados por teclado")
 carga_suma()
-
-
