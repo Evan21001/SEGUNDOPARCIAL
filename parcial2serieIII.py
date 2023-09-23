@@ -1,4 +1,5 @@
 import sys
+import math
 
 def principal():
     opcion_elegida = sys.argv[1]
@@ -13,14 +14,19 @@ def principal():
 
 
 def formula_circulo(radio):
-    circulo = 3.14*radio^2
+    radio = float(radio)
+    circulo = 3.14*(math.pow(radio, 2))
     print (circulo)
-def formula_rectangulo(radio):
-    circulo = 3.14*radio^2
-    print (circulo)
+def formula_rectangulo(largo, ancho):
+    largo = float(largo)
+    ancho = float(ancho)
+    rectangulo = largo * ancho
+    print (rectangulo)
     
-def formula_triangulo(radio):
-    circulo = 3.14*radio^2
-    print (circulo)
+def formula_triangulo(base, altura):
+    base = float(base)
+    altura = float(altura)
+    triangulo = (base * altura) / 2
+    print(triangulo)
 
 principal()
